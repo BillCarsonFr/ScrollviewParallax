@@ -14,6 +14,7 @@
 		282E98941A1BF880007EF23E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 282E98931A1BF880007EF23E /* Images.xcassets */; };
 		282E98971A1BF880007EF23E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 282E98951A1BF880007EF23E /* LaunchScreen.xib */; };
 		282E98A31A1BF880007EF23E /* ScrollviewParallaxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 282E98A21A1BF880007EF23E /* ScrollviewParallaxTests.m */; };
+		282E98AD1A1BFC9C007EF23E /* wind.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 282E98AC1A1BFC9C007EF23E /* wind.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		282E989C1A1BF880007EF23E /* ScrollviewParallaxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollviewParallaxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		282E98A11A1BF880007EF23E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		282E98A21A1BF880007EF23E /* ScrollviewParallaxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollviewParallaxTests.m; sourceTree = "<group>"; };
+		282E98AC1A1BFC9C007EF23E /* wind.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wind.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		282E98851A1BF880007EF23E /* ScrollviewParallax */ = {
 			isa = PBXGroup;
 			children = (
+				282E98AC1A1BFC9C007EF23E /* wind.jpg */,
 				282E988A1A1BF880007EF23E /* AppDelegate.h */,
 				282E988B1A1BF880007EF23E /* AppDelegate.m */,
 				282E988D1A1BF880007EF23E /* ViewController.h */,
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				282E98921A1BF880007EF23E /* Main.storyboard in Resources */,
+				282E98AD1A1BFC9C007EF23E /* wind.jpg in Resources */,
 				282E98971A1BF880007EF23E /* LaunchScreen.xib in Resources */,
 				282E98941A1BF880007EF23E /* Images.xcassets in Resources */,
 			);
