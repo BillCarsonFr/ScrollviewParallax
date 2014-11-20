@@ -120,7 +120,6 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="opb-TI-nwQ" firstAttribute="top" secondItem="HDi-0H-nT2" secondAttribute="top" id="1Xl-76-7iv"/>
                                             <constraint firstItem="L6Z-AD-AKT" firstAttribute="top" secondItem="HDi-0H-nT2" secondAttribute="top" constant="150" id="drN-zT-uyp"/>
                                             <constraint firstAttribute="bottom" secondItem="L6Z-AD-AKT" secondAttribute="bottom" id="emY-0Q-SX2"/>
                                             <constraint firstItem="L6Z-AD-AKT" firstAttribute="leading" secondItem="HDi-0H-nT2" secondAttribute="leading" id="fnM-uv-ctH"/>
@@ -129,11 +128,6 @@
                                             <constraint firstAttribute="trailing" secondItem="L6Z-AD-AKT" secondAttribute="trailing" id="mnO-VL-Xh4"/>
                                             <constraint firstItem="opb-TI-nwQ" firstAttribute="leading" secondItem="HDi-0H-nT2" secondAttribute="leading" id="vPT-CZ-tQx"/>
                                         </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="1Xl-76-7iv"/>
-                                            </mask>
-                                        </variation>
                                     </view>
                                 </subviews>
                                 <constraints>

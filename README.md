@@ -25,7 +25,7 @@ Once you have this working you can start to setup the cool effect.
 Add 4 constraints between the scrollview and the parent view in order to make it full screen.
 In my sample i am using the top layout guide to pin the view, but if you want something full screen (or transparency effect under navbar) you can attach to the top of the parent view.
 
- ![step1](step1.png "Step 1")
+ ![step1](docs/step1.png "Step 1")
 
 
 ### Step 2 : Add the Content View
@@ -35,7 +35,7 @@ In this sample i am using a single child view to put all the scrollable content 
 Here we are doing something very not intuitive for the content constraint.
 In order to make the scroll work you must put also four '0' space constraints (top, bottom, left, right) between the scroll content and the scrollview.
 
-![step2](contentView.gif "Step 2")
+![step2](docs/contentView.gif "Step 2")
 
 ### Step 3 : Setup the content
 
@@ -43,7 +43,7 @@ Now let's add the imageView as a child of the content view.
 
 Let's set the constraints on the image view, we add again 4 constraints to the image, 0 top, 0 left, 0 right, and let's put the height to some arbritary size (150).
 
-![step3](step3.gif "Step 3")
+![step3](docs/step3.gif "Step 3")
 
 At this point you should have a lot of warning in IB, we will fix it later.
 If you run you should see nothing, simply because a zero size view will respect all your constraint.
@@ -53,7 +53,7 @@ In the article Pete is giving a nice tip to set the width. We can just say that 
 In order to do that, you have to Control-drag from the main view to the imageview in the Interface Builder outline view.
 
 
-![step3.1](step3.1.gif "Step 3.1")
+![step3.1](docs/step3.1.gif "Step 3.1")
 
 Let's set the content height.
 You have now to add any additional views to the content.
@@ -71,13 +71,13 @@ In visual format, it could be expressed like that:
 
     |-0-[subContentView]-0-|
 
-![step3.2](step3.2.gif "Fully define the content size")
+![step3.2](docs/step3.2.gif "Fully define the content size")
 
 If your subviews have intrinsic height, you can remove the height constraint.
 
 If you run now, you should have classic scrolling
 
-![step3.3](step3.3.gif "Classic scroll")
+![step3.3](docs/step3.3.gif "Classic scroll")
 
 
 
@@ -101,7 +101,7 @@ So as explained by Pete Hare in the article, we have to replace this missing con
 You can find here an animated gif capture of this step, i don't know if it's really helpfull :), please let me know if you find it usefull.
 
 
-![step4](step4.gif "Final setup")
+![step4](docs/step4.gif "Final setup")
 
 
 If you try to run now, you will already have the cool effect.
@@ -126,7 +126,7 @@ And as we want the image top to stick as long as possible to the top of the scre
 (The default priority is 1000)
 
 
-![step4.1](step4.1.gif "Fix the statisfy error")
+![step4.1](docs/step4.1.gif "Fix the statisfy error")
 
 
 But what happened to the image height?
