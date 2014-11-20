@@ -6,7 +6,7 @@ This sample project is just an illustration of the article written by Pete Hare,
 
 [PETE SHARE's post on domesticcat.com](http://blog.domesticcat.com.au/ios/2014/03/19/creating-parallax-effect-on-uiscrollview-using-simple-constraints/)
 
-I saw in the comment that some people were asking for the code, so i think i could share this.
+I saw in the comments that some people were asking for the code, so i think i could share this.
 
 ![preview](capture.gif "Preview")
 
@@ -58,7 +58,7 @@ In order to do that, you have to Control-drag from the main view to the imagevie
 Let's set the content height.
 You have now to add any additional views to the content.
 And As stated in apple doc:
-> You must make sure you create constraints for all the subviews inside a scroll view. For example, when defining the > constraints for a view that doesn’t have an intrinsic content size, you’ll need more than just a leading edge 
+> You must make sure you create constraints for all the subviews inside a scroll view. For example, when defining the constraints for a view that doesn’t have an intrinsic content size, you’ll need more than just a leading edge 
 > constraint—you must also create trailing edge, width, and height constraints. 
 
 > *There cannot be any missing constraints, starting from one edge of the scroll view to the other.*
@@ -98,7 +98,7 @@ So as explained by Pete Hare in the article, we have to replace this missing con
 
     V:|-0-[imageView(150)]-0-[subContentView(700)]-0-| --- replaced By --> @"V:|-150-[subContentView(700)]-0-|"
 
-You can find here an animated gif capture of this step, i don't know if it's really helpfull :), please let me know if you find it usefull
+You can find here an animated gif capture of this step, i don't know if it's really helpfull :), please let me know if you find it usefull.
 
 
 ![step4](step4.gif "Final setup")
@@ -108,7 +108,7 @@ But if you try to scroll down, at some point you will have an exception in the c
 
      Unable to simultaneously satisfy constraints.
 
-THis is simply because at some point, when the bottom of the imageView reach the top of the screen, the top constraint to the topGuide cannot be satisfied, it would mean that the imageHeight is negative.
+This is simply because at some point, when the bottom of the imageView reach the top of the screen, the top constraint to the topGuide cannot be satisfied, it would mean that the imageHeight is negative.
 
 The solution is to add an additional constraint to the top layout guide:
    
