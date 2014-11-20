@@ -103,9 +103,6 @@ You can find here an animated gif capture of this step, i don't know if it's rea
 
 ![step4](step4.gif "Final setup")
 
-But what happened to the image height?
-
-We removed the height constraint, so it's not managed by a constraint. Instead of that the first time the view is rendered the image will take the space available between the top guide and the other view in the content. And starting from that the layout engine will use the Content Compression Resistance Priority to decide how to resize the image?. As by default the priority is 750, it seems to be OK but it's probably better to lower the priority to 749 (it depends on the exact effect you want to achieve).
 
 If you try to run now, you will already have the cool effect.
 But if you try to scroll down, at some point you will have an exception in the console:
@@ -130,6 +127,11 @@ And as we want the image top to stick as long as possible to the top of the scre
 
 
 ![step4.1](step4.1.gif "Fix the statisfy error")
+
+
+But what happened to the image height?
+
+We removed the height constraint, so it's not managed by a constraint. Instead of that the first time the view is rendered the image will take the space available between the top guide and the other view in the content. And starting from that the layout engine will use the Content Compression Resistance Priority to decide how to resize the image?. As by default the priority is 750, it seems to be OK but it's probably better to lower the priority to 749 (it depends on the exact effect you want to achieve).
 
 ## Misc
 
